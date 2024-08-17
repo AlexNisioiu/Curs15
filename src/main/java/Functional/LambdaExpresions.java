@@ -1,12 +1,11 @@
-package org.example.Functional;
+package Functional;
 
 import java.util.Random;
 import java.util.function.Consumer;
 import java.util.function.Function;
 import java.util.function.Predicate;
-import java.util.function.Supplier;
 
-public class LambdaExpressions {
+public class LambdaExpresions {
     public static void main(String[] args) {
         tryFunction(a -> a + 1);
         tryFunction(a -> a * 2);
@@ -35,21 +34,21 @@ public class LambdaExpressions {
         } else {
             System.out.println("LOST");
         }
+
 //        100 lines of code
     }
 
     public static void tryFunction(Function<Integer, Integer> operation) {
-//        100 lines of code
+//         100 de linii de cod
         int i = 4;
         System.out.println(operation.apply(i));
-//        100 line of code
+//         100 de linii de cod
     }
 
     public static void tryConsumer(Consumer<String> consumer) {
 //        100 lines of code
-        String s = "Test";
+        String s = "test";
         consumer.accept(s);
 //        100 lines of code
-
     }
 }
